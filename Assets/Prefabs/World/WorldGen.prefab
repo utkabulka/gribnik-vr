@@ -46,7 +46,7 @@ MonoBehaviour:
   onWorldGenerated: {fileID: 11400000, guid: f25974bb63c26d123977fd1af62bea1f, type: 2}
   randomizeSeedOnStart: 0
   seed: 228
-  worldSize: 10
+  worldSize: 20
   biomes:
   - {fileID: 11400000, guid: 9a001098ce9a706ed92fa5dad59f41be, type: 2}
   - {fileID: 11400000, guid: 84251402c2b34ceaeb2e2a5d71ba1aee, type: 2}

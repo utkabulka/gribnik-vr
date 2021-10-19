@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef73c496fad959da79af2937a1e290ec, type: 3}
-  m_Name: Pine Forest Biome
+  m_Name: Forest Biome
   m_EditorClassIdentifier: 
-  baseChunk: {fileID: 4209491635867001945, guid: eb071c745bb71ee7a8587f6beb482b6c, type: 3}
-  TreeList: {fileID: 11400000, guid: 1cac2d0bbeba7370b9669c015ad6c6b3, type: 2}
+  baseChunk: {fileID: 7734561305087728399, guid: fb871b25cbda2ae64917c47adb853a1b, type: 3}
+  TreeList: {fileID: 11400000, guid: 1bf2d7f3ef67c156995c9544a3bc359b, type: 2}
+  treeDensity: 3
   maxTreeScale: 1.5
   minTreeScale: 0.7
-  RockList: {fileID: 0}
+  MushroomList: {fileID: 11400000, guid: 1580eab53f7df32d8a5290be2c299f07, type: 2}
+  mushroomDensity: 5
+  maxShroomScale: 2
+  minShroomScale: 0.5

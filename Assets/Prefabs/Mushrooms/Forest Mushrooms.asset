@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ac919cb88bc2ec49fe18e9b1825ef6, type: 3}
+  m_Name: Forest Mushrooms
+  m_EditorClassIdentifier: 
+  props:
+  - {fileID: 7193113509992573395, guid: 90fe0378c1df5b6648fca0f9d828c5b7, type: 3}
+  - {fileID: 7193113509992573395, guid: 90fe0378c1df5b6648fca0f9d828c5b7, type: 3}
+  - {fileID: 6683577026976330797, guid: 2e9d8c9b8f757889f94a027e9e047e11, type: 3}
+  - {fileID: 6683577026976330797, guid: 2e9d8c9b8f757889f94a027e9e047e11, type: 3}
+  - {fileID: 6683577026976330797, guid: 2e9d8c9b8f757889f94a027e9e047e11, type: 3}

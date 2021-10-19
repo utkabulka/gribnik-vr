@@ -23,9 +23,11 @@ public class WorldGen : MonoBehaviour
     private Biome[] biomes;
 
     private void Start() {
-        if (randomizeSeedOnStart)
+        if (randomizeSeedOnStart) {
             seed = Random.Range(int.MinValue, int.MaxValue);
+        }
         Random.InitState(seed);
+        Debug.Log("сид этого мира: " + seed);
         GenerateWorld();
     }
 
@@ -45,7 +47,8 @@ public class WorldGen : MonoBehaviour
         }
 
         Debug.Log("мир сгенерирован");
-        yield return null;
         onWorldGenerated.Raise();
+        Destroy(this);
+        yield return null;
     }
 }

@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biome: {fileID: 0}
   contents: {fileID: 25963879769558262}
+  minDistanceBetweenObjects: 3
+  borderOffset: 0.5
 --- !u!1 &25963879769558262
 GameObject:
   m_ObjectHideFlags: 0

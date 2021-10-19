@@ -57,6 +57,11 @@ public class Chunk : MonoBehaviour
             }
 
             // шобы не накладывались
+            GameObject gameObject = _avoidClipping(lastGeneratedObject, newObject);
+            if (gameObject != null) {
+                lastGeneratedObject = newObject;
+            }
+            /*
             if (Vector3.Distance(lastGeneratedObject.transform.localPosition, newObject.transform.localPosition) < minDistanceBetweenObjects) {
                 bool positionFound = false;
                 for (int j = 0; j < maxTriesForSpacing; j++)
@@ -71,12 +76,54 @@ public class Chunk : MonoBehaviour
                     Destroy(newObject);
                 }
             }
-            lastGeneratedObject = newObject;
+            */
         }
+
+        // грибы
+        for (int i = 0; i < biome.mushroomDensity; i++)
+        {
+            newObject = Instantiate(biome.MushroomList.props[Random.Range(0, biome.MushroomList.props.Length)], this.transform);
+            newObject.transform.localPosition = _getRandomVector3();
+            float randomScale = Random.Range(biome.minShroomScale, biome.maxShroomScale);
+            newObject.transform.localScale = new Vector3(randomScale, randomScale, randomScale);
+            newObject.transform.localEulerAngles = new Vector3(0, Random.Range(0f, 359f), 0);
+
+            // пропускаем проверку в первую итерацию
+            if (i == 0) {
+                lastGeneratedObject = newObject;
+                continue;
+            }
+
+            // шобы не накладывались
+            GameObject gameObject = _avoidClipping(lastGeneratedObject, newObject);
+            if (gameObject != null) {
+                lastGeneratedObject = newObject;
+            }
+        }
+
         yield return null;
     }
 
     private Vector3 _getRandomVector3() {
         return new Vector3(Random.Range(-5f - borderOffset, 5f - borderOffset), 0, Random.Range(-5f - borderOffset, 5f - borderOffset));
+    }
+
+    private GameObject _avoidClipping(GameObject lastGeneratedObject, GameObject newObject) {
+        if (Vector3.Distance(lastGeneratedObject.transform.localPosition, newObject.transform.localPosition) < minDistanceBetweenObjects) {
+            bool positionFound = false;
+            for (int j = 0; j < maxTriesForSpacing; j++)
+            {
+                newObject.transform.localPosition = _getRandomVector3();
+                if (Vector3.Distance(lastGeneratedObject.transform.localPosition, newObject.transform.localPosition) >= minDistanceBetweenObjects) {
+                    positionFound = true;
+                    return newObject;
+                }
+            }
+            if (!positionFound) {
+                Destroy(newObject);
+                return null;
+            }
+        }
+        return null;
     }
 }
