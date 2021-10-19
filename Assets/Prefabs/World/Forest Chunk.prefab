@@ -53,7 +53,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 25963878728735151, guid: ee1497957b14fad5cbe8f5f689a3be3d, type: 3}
       propertyPath: m_Name
-      value: Chunk
+      value: Forest Chunk
       objectReference: {fileID: 0}
+    - target: {fileID: 6340504519414788453, guid: ee1497957b14fad5cbe8f5f689a3be3d, type: 3}
+      propertyPath: biome
+      value: 
+      objectReference: {fileID: 11400000, guid: 9a001098ce9a706ed92fa5dad59f41be, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee1497957b14fad5cbe8f5f689a3be3d, type: 3}

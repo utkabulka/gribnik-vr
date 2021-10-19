@@ -10,9 +10,13 @@ public class WorldGen : MonoBehaviour
 
     [Header("Generation")]
     [SerializeField]
-    private bool randomizeSeedOnStart;
+    private bool randomizeSeedOnStart = true;
     [SerializeField]
     private int seed = 228;
+    
+    // пока что тупой генератор
+    [SerializeField]
+    private int worldSize = 10;
 
     [Header("Objects")]
     [SerializeField]
@@ -30,7 +34,16 @@ public class WorldGen : MonoBehaviour
     }
 
     private IEnumerator _generateWorld() {
-        // че
+        for (int x = 0; x < worldSize; x++)
+        {
+            for (int z = 0; z < worldSize; z++)
+            {
+                GameObject newChunk = Instantiate(biomes[Random.Range(0, biomes.Length)].baseChunk, this.transform);
+                newChunk.transform.localPosition = new Vector3(x * 10, 0, z * 10);
+                newChunk.GetComponent<Chunk>().GenerateObjects();
+            }
+        }
+
         Debug.Log("мир сгенерирован");
         yield return null;
         onWorldGenerated.Raise();

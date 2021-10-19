@@ -59,5 +59,9 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e2719e576b37a171ca0f45a3c09282b5, type: 2}
+    - target: {fileID: 6340504519414788453, guid: ee1497957b14fad5cbe8f5f689a3be3d, type: 3}
+      propertyPath: biome
+      value: 
+      objectReference: {fileID: 11400000, guid: 84251402c2b34ceaeb2e2a5d71ba1aee, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee1497957b14fad5cbe8f5f689a3be3d, type: 3}
