@@ -44,7 +44,7 @@ public class Chunk : MonoBehaviour
         // делаем деревья
         for (int i = 0; i < biome.treeDensity; i++)
         {
-            newObject = Instantiate(biome.TreeList.props[Random.Range(0, biome.TreeList.props.Length)], this.transform);
+            newObject = Instantiate(biome.TreeList.props[Random.Range(0, biome.TreeList.props.Length)], contents.transform);
             newObject.transform.localPosition = _getRandomVector3();
             float randomScale = Random.Range(biome.minTreeScale, biome.maxTreeScale);
             newObject.transform.localScale = new Vector3(randomScale, randomScale, randomScale);
@@ -61,28 +61,12 @@ public class Chunk : MonoBehaviour
             if (gameObject != null) {
                 lastGeneratedObject = newObject;
             }
-            /*
-            if (Vector3.Distance(lastGeneratedObject.transform.localPosition, newObject.transform.localPosition) < minDistanceBetweenObjects) {
-                bool positionFound = false;
-                for (int j = 0; j < maxTriesForSpacing; j++)
-                {
-                    newObject.transform.localPosition = _getRandomVector3();
-                    if (Vector3.Distance(lastGeneratedObject.transform.localPosition, newObject.transform.localPosition) >= minDistanceBetweenObjects) {
-                        positionFound = true;
-                        break;
-                    }
-                }
-                if (!positionFound) {
-                    Destroy(newObject);
-                }
-            }
-            */
         }
 
         // грибы
         for (int i = 0; i < biome.mushroomDensity; i++)
         {
-            newObject = Instantiate(biome.MushroomList.props[Random.Range(0, biome.MushroomList.props.Length)], this.transform);
+            newObject = Instantiate(biome.MushroomList.props[Random.Range(0, biome.MushroomList.props.Length)], contents.transform);
             newObject.transform.localPosition = _getRandomVector3();
             float randomScale = Random.Range(biome.minShroomScale, biome.maxShroomScale);
             newObject.transform.localScale = new Vector3(randomScale, randomScale, randomScale);
@@ -101,6 +85,7 @@ public class Chunk : MonoBehaviour
             }
         }
 
+        //contents.SetActive(false);
         yield return null;
     }
 
