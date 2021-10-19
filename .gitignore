@@ -6,6 +6,10 @@
 # KDE
 .directory
 
+# vscode
+.vscode
+
+# unity
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
