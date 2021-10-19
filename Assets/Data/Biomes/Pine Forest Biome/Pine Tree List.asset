@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2564ca53310141788b2fb329252c8177, type: 3}
-  m_Name: Bushes
+  m_Script: {fileID: 11500000, guid: f2ac919cb88bc2ec49fe18e9b1825ef6, type: 3}
+  m_Name: Pine Tree List
   m_EditorClassIdentifier: 
   props:
-  - {fileID: 4263922822445002727, guid: 3cdafb3c2f54d434894928d72d282874, type: 3}
-  - {fileID: 6239969156481229051, guid: b71b0f8d2f881c743a85228f3030d1cb, type: 3}
+  - {fileID: 4661435515762455780, guid: e289bf5debb17f6459818c207d781953, type: 3}

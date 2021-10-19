@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class PropList : ScriptableObject
+public class ObjectList : ScriptableObject
 {
     public GameObject[] props;
 }

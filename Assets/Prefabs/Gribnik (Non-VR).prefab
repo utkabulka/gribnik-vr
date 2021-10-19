@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5462049597885401266}
   - component: {fileID: 5462049597885401269}
   - component: {fileID: 5462049597885401268}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 5462049598889366128}
   - component: {fileID: 6701657512619173044}
   - component: {fileID: 5462049598889366130}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gribnik (Non-VR)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -166,14 +166,14 @@ MonoBehaviour:
   sprintEnabled: 1
   momentumEnabled: 1
   crouchEnabled: 1
-  jumpEnabled: 1
+  jumpEnabled: 0
   thirdPersonMode: 0
   mouseLookEnabled: 1
   verticalLookEnabled: 1
   customCameraTransform: 0
   customInputNames: 0
-  airControl: 0.447
-  airSprintEnabled: 1
+  airControl: 0.5
+  airSprintEnabled: 0
   normaliseMoveInput: 0
   moveInFixedUpdate: 0
   cam: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7394020803627817482}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: WorldGen Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
