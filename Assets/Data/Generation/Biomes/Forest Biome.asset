@@ -20,4 +20,4 @@ MonoBehaviour:
   MushroomList: {fileID: 11400000, guid: 1580eab53f7df32d8a5290be2c299f07, type: 2}
   mushroomDensity: 5
   maxShroomScale: 2
-  minShroomScale: 0.5
+  minShroomScale: 1
