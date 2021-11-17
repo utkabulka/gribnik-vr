@@ -11,5 +11,5 @@ public class Biome : ScriptableObject
     public ObjectList MushroomList;
     public int mushroomDensity = 5;
     public float maxShroomScale = 2f;
-    public float minShroomScale = 0.5f;
+    public float minShroomScale = 1f;
 }
