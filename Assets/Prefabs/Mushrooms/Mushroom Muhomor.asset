@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Mushroom Muhomor
   m_EditorClassIdentifier: 
   isEdible: 0
-  isToxic: 0
+  isToxic: 1
   BasePoints: -100

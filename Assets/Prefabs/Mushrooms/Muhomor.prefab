@@ -9,8 +9,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 173452950164761830, guid: 6a6ac5c9f609e3d4e9c7f57f346d662e, type: 3}
       propertyPath: m_Name
-      value: Mushroom
+      value: Muhomor
       objectReference: {fileID: 0}
+    - target: {fileID: 1376023628803044726, guid: 6a6ac5c9f609e3d4e9c7f57f346d662e, type: 3}
+      propertyPath: blendEditorExpanded
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2436427114149361990, guid: 6a6ac5c9f609e3d4e9c7f57f346d662e, type: 3}
+      propertyPath: mushroomData
+      value: 
+      objectReference: {fileID: 11400000, guid: 087d9722eb20bacae8278b5910f0dc68, type: 2}
     - target: {fileID: 3432621459615455314, guid: 6a6ac5c9f609e3d4e9c7f57f346d662e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -55,5 +63,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7787244872043356512, guid: 6a6ac5c9f609e3d4e9c7f57f346d662e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 93caadf4359ae8143aad35b3145d31af, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a6ac5c9f609e3d4e9c7f57f346d662e, type: 3}
