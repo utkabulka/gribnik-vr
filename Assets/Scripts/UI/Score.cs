@@ -11,6 +11,7 @@ public class Score : MonoBehaviour
     private void Start() {
         game = GameObject.FindGameObjectWithTag("Game").GetComponent<Game>();
         scoreText = GetComponent<TMP_Text>();
+        UpdateScoreText();
     }
 
     public void UpdateScoreText() {
