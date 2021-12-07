@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class NanoKorzina : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private Game game;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.tag == "Mushroom")
+        {
+            Mushroom mushroom = other.transform.parent.GetComponent<Mushroom>();
+            if (mushroom.wasPickedUp)
+            {
+                game.AddScore(other.transform.parent.gameObject.GetComponent<Mushroom>().GetPoints());
+                Destroy(other.transform.parent.gameObject);
+            }
+        }
     }
 }

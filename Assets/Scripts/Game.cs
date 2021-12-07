@@ -16,7 +16,7 @@ public class Game : MonoBehaviour
     [SerializeField]
     private int score = 0;
     public int Score { get => score; }
-    public float Timer = 10;
+    public float Timer = 60;
 
     private void Start() {
         score = 0;
