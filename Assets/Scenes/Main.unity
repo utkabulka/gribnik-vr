@@ -1396,7 +1396,7 @@ MonoBehaviour:
   onGameOver: {fileID: 11400000, guid: b3a1ea61bd3206d4a86e70d1dad403f3, type: 2}
   gameIsOver: 0
   score: 0
-  Timer: 10
+  Timer: 60
 --- !u!4 &1956778985
 Transform:
   m_ObjectHideFlags: 0
