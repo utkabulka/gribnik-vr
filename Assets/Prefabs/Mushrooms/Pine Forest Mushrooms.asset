@@ -13,8 +13,4 @@ MonoBehaviour:
   m_Name: Pine Forest Mushrooms
   m_EditorClassIdentifier: 
   props:
-  - {fileID: 7193113509992573395, guid: 90fe0378c1df5b6648fca0f9d828c5b7, type: 3}
-  - {fileID: 7193113509992573395, guid: 90fe0378c1df5b6648fca0f9d828c5b7, type: 3}
-  - {fileID: 7193113509992573395, guid: 90fe0378c1df5b6648fca0f9d828c5b7, type: 3}
-  - {fileID: 7193113509992573395, guid: 90fe0378c1df5b6648fca0f9d828c5b7, type: 3}
-  - {fileID: 6683577026976330797, guid: 2e9d8c9b8f757889f94a027e9e047e11, type: 3}
+  - {fileID: 173452950164761830, guid: 6a6ac5c9f609e3d4e9c7f57f346d662e, type: 3}
